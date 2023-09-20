@@ -1,0 +1,209 @@
+@import '@/styles/variables';
+
+.container {
+  width: 100%;
+  padding: 48px 4px 32px 4px;
+  background-color: var(--main_bg_color_our_team);
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid #626262;
+
+  @media screen and (min-width: 440px) {
+    padding: 48px 16px 32px 16px;
+  }
+
+  @media screen and (min-width: $min_tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    padding: 32px;
+    background-color: var(--light_color);
+    width: 588px;
+    height: 534px;
+    padding: 12px;
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: transparent;
+  border: none;
+
+  @media screen and (min-width: $min_tablet) {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    right: 25px;
+    top: 25px;
+    z-index: 2;
+  }
+}
+
+.iconClose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  transition: all 300ms;
+  fill: #fff;
+
+  @media screen and (min-width: $min_tablet) {
+    fill: #000;
+  }
+}
+
+.iconClose:hover {
+  scale: 1.1;
+}
+
+.form {
+  width: 308px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  margin-top: 20px;
+  transition: transform 700ms;
+
+  @media screen and (min-width: $min_tablet) {
+    width: 408px;
+    height: 354px;
+    margin-top: 0;
+  }
+}
+
+.wrapGroup {
+  width: 100%;
+}
+
+.active {
+  transform: translateX(0);
+  transition: transform 2000ms;
+}
+
+.wrapError {
+  position: relative;
+  width: 100%;
+}
+
+.inputError {
+  border-color: red;
+  @media screen and (min-width: $min_tablet) {
+    color: rgba(2, 11, 17, 0.7);
+  }
+}
+
+.error {
+  position: absolute;
+  bottom: 72px;
+  left: 145px;
+  color: red;
+  background-color: var(--main_bg_color_our_team);
+  font-size: 14px;
+  padding: 0 5px 0 5px;
+  @media screen and (min-width: $min_tablet) {
+    background-color: #ebfbfa;
+  }
+}
+
+.errorField {
+  bottom: 120px;
+  left: 125px;
+}
+
+.textarea {
+  resize: none;
+  overflow: hidden;
+  height: 82px;
+  padding-top: 5px;
+}
+
+.btnSubmit {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: transparent;
+  color: var(--main_color_btn);
+  width: 112px;
+  height: 40px;
+  transition-duration: 1s;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  @media screen and (min-width: $min_tablet) {
+    font-weight: 700;
+    background-color: #ebfbfa;
+    color: rgba(2, 11, 17, 0.7);
+    border: 1px solid #020b11;
+  }
+}
+
+.btnActiv {
+  font-weight: 700;
+  background-color: #fafce3;
+  color: #020b11;
+  transition: all 300ms;
+}
+
+.btnActiv:hover {
+  scale: 1.05;
+}
+
+.contactsWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 85%;
+  height: 44px;
+}
+
+.contactsWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 85%;
+  height: 44px;
+  @media screen and (max-width: $min_tablet) {
+    display: none;
+  }
+}
+
+.contactsList {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.contactsItem {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.contactsItem a {
+  display: flex;
+  align-items: center;
+  transition: all 300ms;
+}
+
+.contactsItem a:hover {
+  scale: (1.05);
+}
+
+.iconItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}

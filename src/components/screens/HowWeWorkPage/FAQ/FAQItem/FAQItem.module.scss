@@ -1,0 +1,177 @@
+@import '@/styles/_variables.scss';
+
+@mixin answerHeight(
+  $minMobileHeight,
+  $maxMobileHeight,
+  $tabletHeight,
+  $desktopHeight
+) {
+  @media (min-width: $min_mobile) and (max-width: 479px) {
+    height: $minMobileHeight;
+  }
+  @media (min-width: 480px) and (max-width: $max_mobile) {
+    height: $maxMobileHeight;
+  }
+
+  @media (min-width: $min_tablet) and (max-width: $max_tablet) {
+    height: $tabletHeight;
+  }
+
+  height: $desktopHeight;
+}
+
+@mixin fontParameters($fontWeight, $fontSize, $lineHeight, $letterSpacing) {
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+}
+
+.FAQItem {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.23);
+
+  padding: 8px 10px;
+}
+
+.FAQQuestionContainer {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  overflow: hidden;
+
+  width: 100%;
+
+  padding-bottom: 22px;
+}
+
+.FAQQuestion {
+  @include fontParameters(700, 18px, 24px, 0.05em);
+
+  margin-right: auto;
+
+  width: 100%;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $min_tablet) {
+    font-size: 20px;
+  }
+}
+
+.FAQIcon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--text_color_name_our_team);
+
+  margin-left: auto;
+
+  transform: rotate(0);
+
+  &__rotate {
+    width: 24px;
+    height: 24px;
+    stroke: var(--text_color_name_our_team);
+    transform: rotate(180deg);
+  }
+}
+
+.FAQanswer {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  @include fontParameters(700, 13px, 19px, 0.05em);
+
+  color: var(--main_text_color_our_team);
+
+  transition: height 0.5s linear, opacity 0.5s linear;
+
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  border: 0;
+  @media screen and (min-width: $min_tablet) {
+    font-size: 16px;
+  }
+  &__visible {
+    margin: 0;
+    margin-bottom: 5px;
+    opacity: 1;
+    overflow: auto;
+
+    transition: height 0.5s linear, opacity 0.5s linear;
+
+    @include fontParameters(700, 13px, 19px, 0.05em);
+
+    color: var(--main_text_color_our_team);
+
+    @media screen and (min-width: $min_tablet) {
+      font-size: 16px;
+    }
+  }
+}
+
+.FAQLink {
+  color: var(--text_color_name_our_team);
+  cursor: pointer;
+  border-bottom: 1px solid var(--text_color_name_our_team);
+}
+
+.first {
+  @include answerHeight(152px, 114px, 76px, 57px);
+}
+.second {
+  @include answerHeight(342px, 247px, 171px, 133px);
+}
+.third {
+  @include answerHeight(228px, 152px, 114px, 95px);
+}
+
+.fourth {
+  @include answerHeight(228px, 171px, 114px, 95px);
+}
+
+.fifth {
+  @include answerHeight(228px, 171px, 114px, 95px);
+}
+
+.sixth {
+  @include answerHeight(133px, 95px, 57px, 57px);
+}
+
+.seventh {
+  @include answerHeight(171px, 114px, 76px, 76px);
+}
+
+.eighth {
+  @include answerHeight(190px, 133px, 95px, 76px);
+}
+
+.ninth {
+  @include answerHeight(209px, 152px, 95px, 76px);
+}
+
+.tenth {
+  @include answerHeight(190px, 133px, 95px, 76px);
+}
+
+.eleventh {
+  @include answerHeight(95px, 76px, 57px, 38px);
+}
+
+.twelfth {
+  @include answerHeight(133px, 95px, 76px, 57px);
+}
+
+.thirteenth {
+  @include answerHeight(152px, 95px, 76px, 57px);
+}

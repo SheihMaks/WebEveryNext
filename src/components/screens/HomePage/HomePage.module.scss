@@ -1,0 +1,114 @@
+@import '@/styles/variables';
+
+.home {
+  width: 100vw;
+  height: calc(100vh - 36px);
+  background-image: linear-gradient(
+      0deg,
+      rgb(2, 11, 17) 0%,
+      rgba(0, 0, 2, 0) 20%
+    ),
+    url('/heroBg.webp');
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 16px 16px;
+  position: relative;
+
+  @media screen and (min-width: $min_tablet) {
+    padding: 186px 96px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  @media screen and (orientation: landscape) and (max-height: 420px) {
+    padding: 48px 16px 16px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (orientation: portrait) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.title {
+  color: var(--light_color);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  text-align: start;
+  @media screen and (min-width: $min_tablet) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: $min_desktop) {
+    font-size: 32px;
+  }
+}
+
+.titleWrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+  height: 64px;
+
+  @media screen and (orientation: landscape) and (max-height: 420px) {
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $min_desktop) {
+    height: 80px;
+  }
+}
+
+.logo {
+  width: 120px;
+  height: 136px;
+  margin-bottom: 88px;
+
+  @media screen and (orientation: landscape) {
+    display: none;
+  }
+
+  @media screen and (orientation: portrait) {
+    display: block;
+  }
+}
+
+.btn {
+  width: 200px;
+  opacity: 0;
+  @media screen and (max-width: $max_mobile) {
+    width: 171px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    // margin-bottom: 10px;
+  }
+
+  animation: buttonOrderHero 1s linear 3s forwards;
+}
+
+@keyframes buttonOrderHero {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

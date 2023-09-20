@@ -1,0 +1,73 @@
+@import '@/styles/variables';
+
+.btnSlidePrev {
+  position: absolute;
+  top: 20%;
+  left: -28%;
+  z-index: 1;
+  border: none;
+  background-color: transparent;
+  animation: arrowLeft 1000ms infinite ease-out;
+  width: 42px;
+  height: 12px;
+  cursor: pointer;
+
+  @media screen and (min-width: $min_tablet) {
+    left: -13%;
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    // left: -7%;
+    display: none;
+  }
+}
+
+@keyframes arrowLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.btnSlideNext {
+  position: absolute;
+  top: 20%;
+  right: -28%;
+  z-index: 1;
+  border: none;
+  background-color: transparent;
+  animation: arrowRight 1000ms infinite ease-out;
+  width: 42px;
+  height: 12px;
+  cursor: pointer;
+
+  @media screen and (min-width: $min_tablet) {
+    right: -13%;
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    // right: -7%;
+    display: none;
+  }
+}
+
+@keyframes arrowRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

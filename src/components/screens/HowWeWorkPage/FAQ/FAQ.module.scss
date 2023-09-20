@@ -1,0 +1,54 @@
+@import '@/styles/_variables.scss';
+
+.FAQsection {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--main_bg_color_our_team);
+
+  color: var(--text_color_name_our_team);
+  max-width: 100vw;
+  padding: 62px 75px 72px 75px;
+  margin-top: 68px;
+  overflow: hidden;
+
+  @media screen and (max-width: $max_mobile) {
+    padding: 62px 16px 72px 16px;
+  }
+
+  align-items: center;
+}
+
+.FAQtitle {
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  @media screen and (min-width: $min_tablet) {
+    font-size: 32px;
+  }
+}
+
+.FAQlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 900px;
+
+  @media (min-width: $min_tablet) and (max-width: $max_tablet) {
+    width: 700px;
+  }
+
+  @media (min-width: 480px) and (max-width: $max_mobile) {
+    width: 420px;
+    display: block;
+  }
+
+  @media (min-width: $min_mobile) and (max-width: 479px) {
+    width: 300px;
+    display: block;
+  }
+}

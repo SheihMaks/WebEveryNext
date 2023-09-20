@@ -1,0 +1,26 @@
+@import '@/styles/_variables.scss';
+
+.HowWeWork {
+  background-color: var(--main_bg_color_our_team);
+
+  color: var(--text_color_name_our_team);
+
+  padding: 64px 16px 16px 16px;
+  max-width: 984px;
+  margin: 0 auto;
+
+}
+
+.HowWeWorkTitle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

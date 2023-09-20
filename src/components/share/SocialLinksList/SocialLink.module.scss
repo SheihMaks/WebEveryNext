@@ -1,0 +1,105 @@
+@import '@/styles/variables';
+.listWrapper {
+  display: flex;
+  // column-gap: 15px;
+  z-index: 10;
+}
+
+.itemSocialLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  // width: 30px;
+  // height: 30px;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  outline: 1px solid var(--light_color);
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+  &:hover {
+    cursor: pointer;
+    outline-offset: 4px;
+    animation: shake 0.25s;
+  }
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+
+  20% {
+    transform: rotate(-15deg);
+  }
+
+  30% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-15deg);
+  }
+}
+
+.iconSocialLink {
+  display: block;
+  // width: 15px;
+  // height: 15px;
+  fill: var(--light_color);
+}
+
+.instagram:hover {
+  outline: 1px solid #dc2743;
+  background-color: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.facebook {
+  &:hover,
+  &:focus {
+    background-color: var(--facebook_color);
+    outline: 1px solid var(--facebook_color);
+  }
+}
+
+.telegram {
+  &:hover,
+  &:focus {
+    background-color: var(--telegram_color);
+    outline: 1px solid var(--telegram_color);
+  }
+}
+
+.linkedin {
+  &:hover,
+  &:focus {
+    background-color: var(--linkedin_color);
+    outline: 1px solid var(--linkedin_color);
+  }
+}

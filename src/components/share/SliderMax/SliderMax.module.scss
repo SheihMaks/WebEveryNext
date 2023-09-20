@@ -1,0 +1,302 @@
+@import '@/styles/_variables';
+
+/*SliderInfo styles*/
+.sliderInfoWrapper {
+  padding: 0 75px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $min_desktop_large) {
+    margin-bottom: 53px;
+    padding: 0px;
+  }
+}
+
+.coworker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: $min_desktop_large) {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 1044px;
+    height: 381px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.photoWrapper {
+  display: flex;
+  justify-content: center;
+  max-width: 326px;
+  max-height: 381px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $min_desktop_large) {
+    min-width: 326px;
+    min-height: 381px;
+  }
+}
+
+.photo {
+  width: 50%;
+
+  @media screen and (min-width: $min_tablet) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    width: 326px;
+    height: 381px;
+  }
+}
+
+.informationWrapper {
+  text-align: center;
+
+  @media screen and (min-width: $min_desktop_large) {
+    margin-left: 90px;
+  }
+}
+
+.name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: var(--text_color_name_our_team);
+  margin-bottom: 8px;
+  text-align: center;
+
+  @media screen and (min-width: $min_desktop_large) {
+    text-align: left;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+  }
+}
+
+.profession {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--main_text_color_our_team);
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $min_desktop_large) {
+    text-align: left;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.7px;
+  }
+}
+
+.quote {
+  position: relative;
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-align: start;
+  color: var(--main_text_color_our_team);
+
+  @media screen and (min-width: $min_desktop_large) {
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.7px;
+  }
+}
+
+.quoteIcon {
+  position: absolute;
+  top: -2px;
+  left: -28px;
+  width: 20px;
+  height: 16px;
+
+  @media screen and (min-width: $min_desktop_large) {
+    top: 1px;
+  }
+}
+
+.humor {
+  position: relative;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-align: start;
+  margin-bottom: 24px;
+  color: var(--main_text_color_our_team);
+
+  @media screen and (min-width: $min_desktop_large) {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.7px;
+  }
+}
+
+.humorIcon {
+  position: absolute;
+  top: -2px;
+  left: -28px;
+  width: 20px;
+  height: 20px;
+}
+
+.city {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 24px;
+  color: var(--main_text_color_our_team);
+
+  @media screen and (min-width: $min_desktop_large) {
+    margin-bottom: 0px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.country {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--main_text_color_our_team);
+
+  @media screen and (min-width: $min_desktop_large) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+// if use svg
+// .mapWrapper {
+//   max-width: 1365px;
+//   text-align: center;
+// }
+
+// if use png
+.mapWrapper {
+  max-width: 1365px;
+  text-align: center;
+
+  @media screen and (min-width: $min_desktop_large) {
+    display: flex;
+    justify-content: center;
+  }
+}
+.map {
+  width: 100%;
+  height: 100%;
+
+  @media screen and (min-width: $min_desktop_large) {
+    width: 297px;
+    height: 168px;
+  }
+}
+
+/*SliderNav styles*/
+.sliderNavWrapper {
+  position: relative;
+  height: auto;
+}
+
+.photosWrapper {
+  width: 180px;
+  height: 57px;
+  margin: 0 auto 24px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  overflow: hidden;
+
+  @media screen and (min-width: $min_tablet) {
+    width: 400px;
+  }
+
+  @media screen and (min-width: $min_desktop) {
+    width: 515px;
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    margin-bottom: 32px;
+    width: 950px;
+  }
+}
+
+.photoSmall {
+  width: 37px;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: all 0.5s ease-in-out 0.5s;
+}
+
+.photoSmall:hover {
+  transform: scale(1.4);
+}
+
+.activePhotoSmall {
+  transform: scale(1.4);
+  opacity: 1;
+  transition: all 0.5s ease-in-out 0.5s;
+}
+
+.dotsWrapper {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @media screen and (min-width: $min_tablet) {
+    width: 200px;
+  }
+
+  @media screen and (min-width: $min_desktop) {
+    width: 300px;
+  }
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--slider_dot_color);
+  cursor: pointer;
+  transition-duration: 0.5s;
+
+  &:hover {
+    transform: scale(1.6);
+  }
+}
+
+.activeDot {
+  border-radius: 50%;
+  background-color: var(--active_slider_dot_color);
+  cursor: pointer;
+  transform: scale(1.6);
+  transition-duration: 0.5s;
+}
