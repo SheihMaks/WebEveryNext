@@ -13,13 +13,10 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    // preload: ['ua', 'en'],
+    preload: ['ua', 'en'],
     fallbackLng: 'ua',
     debug: false,
-   
-    // react: {
-    //   useSuspense: false,
-    // }, 
+    // lng:["ua","en"],
     interpolation: {
       escapeValue: false,
     },
