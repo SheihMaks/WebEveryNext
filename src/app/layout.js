@@ -8,8 +8,6 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BackToTop from "@/components/ui/BackToTop";
 
-// import { ReactNotifications } from 'react-notifications-component';
-
 const jura = Jura({ subsets: ['latin'] })
 
 export const metadata = {
@@ -25,7 +23,6 @@ export default function RootLayout({ children }) {
       <body id="modal" >
         {/* <div > */}
         <TranslaterProvider>
-      {/* <ReactNotifications/> */}
           <ModalProvider>
             <Header />
             <Suspense fallback={<Loading/>}>
@@ -34,7 +31,6 @@ export default function RootLayout({ children }) {
               <Footer />  
             </Suspense>
           </ModalProvider>
-      {/* </ReactNotifications> */}
           </TranslaterProvider>
           {/* </div> */}
       </body>

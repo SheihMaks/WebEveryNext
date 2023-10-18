@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import SocialLinksList from '@/components/share/SocialLinksList';
 import styles from './Footer.module.scss';
 
@@ -14,7 +15,7 @@ const Footer = () => {
           customIconSize={styles.iconSize}
         />
         <div className={styles.mailBlock}>
-          <a
+          <Link
             className={styles.mailLink}
             href="mailto:inbox.webevery@gmail.com"
             target="_blank"
@@ -24,10 +25,10 @@ const Footer = () => {
             <svg className={styles.mailIcon}>
               <use href="/sprite.svg#envelope" />
             </svg>
-          </a>
-          <a className={styles.mailText} href="mailto:inbox.webevery@gmail.com">
+          </Link>
+          <Link className={styles.mailText} href="mailto:inbox.webevery@gmail.com">
             inbox.webevery@gmail.com
-          </a>
+          </Link>
         </div>
       </footer>
     </>
