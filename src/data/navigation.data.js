@@ -1,16 +1,16 @@
 export const navData = [
-  // {
-  //   id: Math.random(),
-  //   path: '/',
-  //   title: 'Головна',
-  //   titleEN: 'Home',
-  // },
-  // {
-  //   id: Math.random(),
-  //   path: '/services',
-  //   title: 'Послуги',
-  //   titleEN: 'Services',
-  // },
+  {
+    id: Math.random(),
+    path: '/',
+    title: 'Головна',
+    titleEN: 'Home',
+  },
+  {
+    id: Math.random(),
+    path: '/services',
+    title: 'Послуги',
+    titleEN: 'Services',
+  },
   {
     id: Math.random(),
     path: '/ourProjects',
