@@ -16,7 +16,6 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  console.log(jura)
   return (
     <html >
       {/* <body className={jura.className} id="modal" > */}
