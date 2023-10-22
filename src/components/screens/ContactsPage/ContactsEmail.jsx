@@ -3,7 +3,7 @@ import styles from './ContactsPage.module.scss';
 
 export const ContactsEmail = () => {
   return (
-    <Link href="mailto:inbox.webevery@gmail.com" className={styles.email}>
+    <Link href="mailto:inbox.webevery@gmail.com"  className={styles.email}>
       <svg>
         <use href='/sprite.svg#icon-contactsMail' />
       </svg>
