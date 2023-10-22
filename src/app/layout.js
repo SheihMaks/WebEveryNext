@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html >
       {/* <body className={jura.className} id="modal" > */}
-      <body id="modal" >
+      <body className={jura.className} id="modal" >
         {/* <div > */}
         <TranslaterProvider>
           <ModalProvider>
