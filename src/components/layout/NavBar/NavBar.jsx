@@ -28,7 +28,7 @@ const path=usePathname()
     }
   }
   return (<header className={styles.headerNav}>
-      <Link href='/' className={styles.navLinkLogo}>
+      <Link href='/' className={styles.navLinkLogo} prefetch={false}>
         <Logo
           className={styles.laptopLogo}
           width="145"
@@ -75,7 +75,6 @@ const path=usePathname()
               <Link
                 href={el.path}
                 onClick={() => setNav(true)}
-                prefetch={false}
                 className={
                   path === el.path ? styles.activeNavLinkNav : styles.navLinkNav
                 }
