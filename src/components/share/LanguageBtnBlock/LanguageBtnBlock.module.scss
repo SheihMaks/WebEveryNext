@@ -1,5 +1,5 @@
 @import '@/styles/_variables.scss';
-
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;700;900&display=swap');
 .dropdown {
   position: relative;
   display: inline-block;
@@ -20,7 +20,7 @@
   // background-color: initial;
   background-color: transparent;
   color: #ffffff;
-
+  font-family: 'Jura', sans-serif;
   outline: none;
   cursor: pointer;
   font-size: 14px;
