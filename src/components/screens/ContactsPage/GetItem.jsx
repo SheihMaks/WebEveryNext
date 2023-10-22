@@ -19,12 +19,12 @@ export const GetItem = () => {
           <li key={id}>
             <h2>{country}</h2>
 
-            <Link href={'tel:' + tel} >
+            <a href={'tel:' + tel} >
               <svg>
                 <use href='/sprite.svg#icon-contactsTel' />
               </svg>
               <p> {tel}</p>
-            </Link>
+            </a>
 
             <p>
               <svg>
