@@ -2,7 +2,6 @@ import { contactsData, contactsDataEN, currentLanguages } from '@/data';
 import styles from './ContactsPage.module.scss';
 
 import { useTranslation } from 'react-i18next';
-import Link from 'next/link';
 
 export const GetItem = () => {
   const { i18n } = useTranslation();
