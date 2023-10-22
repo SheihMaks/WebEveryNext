@@ -75,6 +75,7 @@ const path=usePathname()
               <Link
                 href={el.path}
                 onClick={() => setNav(true)}
+                prefetch={false}
                 className={
                   path === el.path ? styles.activeNavLinkNav : styles.navLinkNav
                 }
