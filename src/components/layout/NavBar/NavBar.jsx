@@ -9,6 +9,7 @@ import { navData, currentLanguages } from '@/data';
 import styles from './NavBar.module.scss';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
+import { t } from 'i18next';
 
 const Navbar = () => {
   const [nav, setNav] = useState(true);
@@ -28,7 +29,7 @@ const path=usePathname()
     }
   }
   return (<header className={styles.headerNav}>
-      <Link href='/' className={styles.navLinkLogo} passHref prefetch={false}>
+      <Link href='/' className={styles.navLinkLogo} passHref={true} prefetch={false}>
         <Logo
           className={styles.laptopLogo}
           width="145"
