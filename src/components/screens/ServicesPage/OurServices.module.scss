@@ -61,7 +61,7 @@
 
   & .title,
   & .whatIsItBtn {
-    // font-family: 'Jura', sans-serif;
+    
     font-weight: 700;
     line-height: 1.18;
     text-align: center;
@@ -79,6 +79,7 @@
   }
 
   & .whatIsItBtn {
+    font-family: 'Jura', sans-serif;
     font-size: 14px;
     border: none;
     background: none;
