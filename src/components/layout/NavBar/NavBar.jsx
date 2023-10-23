@@ -1,6 +1,5 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import Image from "next/image";
 import Logo from './Logo_webery_lightyellow.svg';
 import SmallLogo from './small_logo_lightyellow.svg';
 import { useTranslation } from 'react-i18next';
@@ -9,7 +8,7 @@ import { navData, currentLanguages } from '@/data';
 import styles from './NavBar.module.scss';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { t } from 'i18next';
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(true);
