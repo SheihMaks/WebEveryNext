@@ -29,7 +29,7 @@ const path=usePathname()
     }
   }
   return (<header className={styles.headerNav}>
-      <Link href='/' className={styles.navLinkLogo} passHref={true} prefetch={false}>
+      <Link href='/' className={styles.navLinkLogo} passHref={false} prefetch={false}>
         <Logo
           className={styles.laptopLogo}
           width="145"
