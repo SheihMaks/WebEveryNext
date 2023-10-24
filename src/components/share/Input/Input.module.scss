@@ -82,8 +82,12 @@
 }
 
 .inputWrapper .labelTextarea {
+  color: var(--main_color_btn);
   transform: translateY(-5em);
-  padding-left: 16px;
+  @media screen and (min-width: $min_tablet) {
+    color: #020b11;
+    padding-left: 16px;
+  }
 }
 
 .input:focus + label,
