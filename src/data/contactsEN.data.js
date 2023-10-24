@@ -8,21 +8,21 @@ export const contactsDataEN = [
 
   {
     id: '2',
-    country: 'Czech',
+    country: 'Czech Republic',
     tel: '+420730113790',
     location: 'Ostrava',
   },
 
   {
     id: '3',
-    country: 'Deutschland',
+    country: 'Germany',
     tel: '+380500172671',
     location: 'Landau in der Pfalz',
   },
 
   {
     id: '4',
-    country: 'Slovenia',
+    country: 'Slovakia',
     tel: '+421950441081',
     location: 'Trenčín',
   },
