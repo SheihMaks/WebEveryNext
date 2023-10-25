@@ -1,11 +1,10 @@
 @import '@/styles/_variables.scss';
 
 .contactsSection {
-  width: 100vw;
+  max-width: 100vw;
   min-height: calc(100vh - 36px);
   padding: 62px 16px 64px;
   margin-top: 68px;
-  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +51,6 @@
 
 .contactsWrapper {
   width: 100%;
-  max-width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
